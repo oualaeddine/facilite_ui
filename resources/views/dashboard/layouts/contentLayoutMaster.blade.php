@@ -29,11 +29,18 @@
     <link rel="stylesheet" type="text/css" href="{{asset('dashboard/assets/icon/feather/css/feather.css')}}">
     <!-- font-awesome-n -->
     <link rel="stylesheet" type="text/css" href="{{asset('dashboard/assets/css/font-awesome-n.min.css')}}">
-    <!-- Chartlist chart css -->
-    <link rel="stylesheet" href="{{asset('dashboard/bower_components/chartist/css/chartist.css')}}" type="text/css" media="all">
+    <!-- Switch component css -->
+    <link rel="stylesheet" type="text/css" href="{{asset('dashboard/bower_components/switchery/css/switchery.min.css')}}">
+
+    @yield('css')
+
     <!-- Style.css -->
     <link rel="stylesheet" type="text/css" href="{{asset('dashboard/assets/css/style.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('dashboard/assets/css/widget.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('dashboard/assets/css/pages.css')}}">
+
+
+
 </head>
 
 <body>
@@ -393,26 +400,26 @@
 <script type="text/javascript" src="{{asset('dashboard/bower_components/jquery-ui/js/jquery-ui.min.js')}}"></script>
 <script type="text/javascript" src="{{asset('dashboard/bower_components/popper.js/js/popper.min.js')}}"></script>
 <script type="text/javascript" src="{{asset('dashboard/bower_components/bootstrap/js/bootstrap.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('dashboard/assets/js/pace.min.js')}}"></script>
 <!-- waves js -->
 <script src="{{asset('dashboard/assets/pages/waves/js/waves.min.js')}}"></script>
+<!-- modernizr js -->
+<script type="text/javascript" src="{{asset('dashboard/bower_components/modernizr/js/modernizr.js')}}"></script>
+<script type="text/javascript" src="{{asset('dashboard/bower_components/modernizr/js/css-scrollbars.js')}}"></script>
 <!-- jquery slimscroll js -->
 <script type="text/javascript" src="{{asset('dashboard/bower_components/jquery-slimscroll/js/jquery.slimscroll.js')}}"></script>
-<!-- Float Chart js -->
-<script src="{{asset('dashboard/assets/pages/chart/float/jquery.flot.js')}}"></script>
-<script src="{{asset('dashboard/assets/pages/chart/float/jquery.flot.categories.js')}}"></script>
-<script src="{{asset('dashboard/assets/pages/chart/float/curvedLines.js')}}"></script>
-<script src="{{asset('dashboard/assets/pages/chart/float/jquery.flot.tooltip.min.js')}}"></script>
-<!-- Chartlist charts -->
-<script src="{{asset('dashboard/bower_components/chartist/js/chartist.js')}}"></script>
-<!-- amchart js -->
-<script src="{{asset('dashboard/assets/pages/widget/amchart/amcharts.js')}}"></script>
-<script src="{{asset('dashboard/assets/pages/widget/amchart/serial.js')}}"></script>
-<script src="{{asset('dashboard/assets/pages/widget/amchart/light.js')}}"></script>
+<!-- Switch component js -->
+<script type="text/javascript" src="{{asset('dashboard/bower_components/switchery/js/switchery.min.js')}}"></script>
+
+@yield('js')
+
 <!-- Custom js -->
 <script src="{{asset('dashboard/assets/js/pcoded.min.js')}}"></script>
 <script src="{{asset('dashboard/assets/js/vertical/vertical-layout.min.js')}}"></script>
-<script type="text/javascript" src="{{asset('dashboard/assets/pages/dashboard/custom-dashboard.min.js')}}"></script>
 <script type="text/javascript" src="{{asset('dashboard/assets/js/script.min.js')}}"></script>
+
+
+
 </body>
 
 </html>
