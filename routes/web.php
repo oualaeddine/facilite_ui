@@ -16,3 +16,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('dashboard.layouts.contentLayoutMaster');
 });
+
+Route::get('/products', function () {
+    return view('dashboard.pages.catalog.products.index');
+});
+
+
+Route::get('/add-product', function () {
+    return view('dashboard.pages.catalog.products.addProduct.index');
+});

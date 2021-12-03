@@ -1,0 +1,35 @@
+.add-product-information {
+    margin-bottom: 28px !important;
+}
+.product-name-input {
+    font-size: 1.5rem !important;
+}
+
+.bordered-select {
+    border: 1px solid #ced4da !important;
+    background-position: right .1rem center !important;
+    padding: 6px;
+}
+
+.toolbar a .fa, .toolbar a p{
+    color: #6c868e;
+}
+.toolbar a:hover .fa, .toolbar a:hover p{
+    color: #4099ff;
+}
+
+.toolbar .fa {
+    font-size: 20px;
+}
+
+.product-footer {
+    position: fixed;
+    width: 100%;
+    padding: 16px;
+    padding-left: 250px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    box-shadow: #363a41 0 0 10px;
+    display: flex;
+}
