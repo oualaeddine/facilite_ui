@@ -33,3 +33,31 @@
     box-shadow: #363a41 0 0 10px;
     display: flex;
 }
+
+.select2-container {
+    width: 100% !important;
+}
+
+.color-preview {
+    width: 13px;
+    height: 13px;
+}
+
+.combinations-preview {
+    min-height: 50px;
+    width: 100%;
+    border: 1px solid rgba(0,0,0,.3);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+.combinations-preview .combinations-item {
+    margin: 8px;
+    padding: 6px;
+    background-color: #4099ff;
+    color: white;
+    border-radius: 3px;
+}
+

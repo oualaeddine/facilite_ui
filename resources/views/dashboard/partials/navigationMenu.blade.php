@@ -11,7 +11,7 @@
                     </a>
                     <ul class="pcoded-submenu">
                         <li class="active">
-                            <a href="index.html" class="waves-effect waves-dark">
+                            <a href="products" class="waves-effect waves-dark">
                                 <span class="pcoded-mtext">Products</span>
                             </a>
                         </li>

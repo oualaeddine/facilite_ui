@@ -14,28 +14,21 @@
         <div class="card">
             <div class="card-body">
                 <div class="row">
-                    <div class="col-lg-7 col-md-12">
+                    <div class="col-lg-9 col-md-12">
                         <input type="text"
                                class="form-control product-name-input mt-1 mb-1"
                                placeholder="Enter your product name">
                     </div>
-                    <div class="col-lg-5 col-md-12">
+                    <div class="col-lg-3 col-md-12">
                         <div class="row mt-2">
-                            <div class="col-lg-5 col-sm-12">
-                                <select name="product-type" class="form-select form-control bordered-select">
-                                    <option value="opt1">Standard product</option>
-                                    <option value="opt2">Pack of products</option>
-                                    <option value="opt3">Virtual product</option>
-                                </select>
-                            </div>
-                            <div class="col-lg-2 col-sm-6">
+                            <div class="col-lg-4 col-sm-6">
                                 <select name="language" class="form-select form-control bordered-select">
                                     <option value="opt1">ar</option>
                                     <option value="opt2">en</option>
                                     <option value="opt3">fr</option>
                                 </select>
                             </div>
-                            <div class="col-lg-5 col-sm-6">
+                            <div class="col-lg-8 col-sm-6">
                                 <div class="d-flex justify-content-between toolbar">
                                     <a href="#" class="text-center">
                                         <i class="fa fa-industry"></i>
@@ -65,8 +58,11 @@
                     <li class="nav-item">
                         <a class="nav-link active" data-bs-toggle="tab" href="#basic-settings" role="tab" aria-selected="true">Basic settings</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item quantities-tab">
                         <a class="nav-link" data-bs-toggle="tab" href="#quantities" role="tab" aria-selected="false">Quantities</a>
+                    </li>
+                    <li class="nav-item combinations-tab d-none">
+                        <a class="nav-link" data-bs-toggle="tab" href="#combinations" role="tab" aria-selected="false">Combinations</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" data-bs-toggle="tab" href="#shipping" role="tab" aria-selected="false">Shipping</a>
@@ -89,6 +85,9 @@
                     </div>
                     <div class="tab-pane" id="quantities" role="tabpanel">
                         @include('dashboard.pages.catalog.products.addProduct.tabs.quantities')
+                    </div>
+                    <div class="tab-pane" id="combinations" role="tabpanel">
+                        @include('dashboard.pages.catalog.products.addProduct.tabs.combinations')
                     </div>
                     <div class="tab-pane" id="shipping" role="tabpanel">
                         @include('dashboard.pages.catalog.products.addProduct.tabs.shipping')

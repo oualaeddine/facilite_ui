@@ -161,47 +161,6 @@
                         </div>
                     </div>
 
-                    <div class="mb-4">
-                        <h6 class="fw-bold mt-1 mb-3">Impact on price</h6>
-                        <div class="row mb-3">
-                            <div class="col-lg-3 col-md-6">
-                                <label class="form-control-label">Product price (tax excl.)</label>
-                                <div class="input-group">
-                                    <input type="number" id="init-val" value="1" class="form-control" disabled>
-                                    <span class="input-group-text addon-style bg-white">
-                                                            <label class="text-muted">DZD</label>
-                                                        </span>
-                                </div>
-                            </div>
-                            <div class="col-lg-9">
-                                <div class="form-check mt-4 pt-1">
-                                    <input class="form-check-input" type="checkbox" value="" id="leave-init-val">
-                                    <label class="form-check-label" for="defaultCheck1">
-                                        Leave initial price
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row mb-3">
-                            <label class="form-control-label mb-1">Apply a discount of</label>
-                            <div class="col-lg-3 col-md-6">
-                                <input type="number" value="0" class="form-control">
-                            </div>
-                            <div class="col-lg-3">
-                                <select class="form-select form-control bordered-select">
-                                    <option value="amount">€</option>
-                                    <option value="percentage">%</option>
-                                </select>
-                            </div>
-                            <div class="col-lg-3">
-                                <select class="form-select form-control bordered-select">
-                                    <option value="0">Tax excluded</option>
-                                    <option value="1" selected="selected">Tax included</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-
                     <div class="row">
                         <div class="col-12 text-end">
                             <button class="btn waves-effect waves-light btn-inverse btn-outline-inverse">Cancel</button>

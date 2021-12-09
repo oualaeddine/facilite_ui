@@ -95,17 +95,6 @@
         </div>
         {{-- End Condition & References inputs --}}
 
-        {{-- Start Customization inputs --}}
-        <div class="mb-4">
-            <h5 class="fw-bold mt-1 mb-3">Customization</h5>
-            <p class="text-muted">
-                Customers can personalize the product by entering some text or by providing custom image files.
-            </p>
-
-            <a class="btn waves-effect waves-light btn-inverse btn-outline-inverse"><i class="fa fa-plus"></i>Add a customization field</a>
-        </div>
-        {{-- End Customization inputs --}}
-
         {{-- Start Attached files inputs --}}
         <div class="mb-4">
             <h5 class="fw-bold mt-1 mb-3">Attached files</h5>
@@ -117,75 +106,6 @@
             <a class="btn waves-effect waves-light btn-inverse btn-outline-inverse"><i class="fa fa-plus"></i>Attach a new file</a>
         </div>
         {{-- End Attached files inputs --}}
-
-        {{-- Start Suppliers inputs --}}
-        <div class="mb-4">
-            <h5 class="fw-bold mt-1 mb-3">Suppliers</h5>
-
-            <div class="row">
-                <div class="col-lg-8">
-                    <div class="alert alert-primary background-primary">
-                        <p>
-                            <a href="#" class="text-white fw-bold">Read more</a><br>
-                            This interface allows you to specify the suppliers of the current product and its combinations, if any.<br>
-                            You can specify supplier references according to previously associated suppliers.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="mb-4">
-            <div class="row">
-                <div class="col-lg-8">
-                    <table class="table" id="form_step6_suppliers">
-                        <thead class="thead-default">
-                        <tr>
-                            <th width="70%">Choose the suppliers associated with this product</th>
-                            <th width="30%">Default supplier</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>
-                                <div class="checkbox">
-                                    <label class="form-check-label">
-                                        <input type="checkbox" name="accessories" value="2">
-                                        Accessories supplier
-                                    </label>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="radio">
-                                    <label class="form-label">
-                                        <input type="radio" name="radio15">
-                                        Accessories supplier
-                                    </label>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><div class="checkbox">
-                                    <label class="form-check-label">
-                                        <input type="checkbox" name="accessories" value="1">
-                                        Fashion supplier
-                                    </label>
-                                </div></td>
-                            <td>
-                                <div class="radio">
-                                    <label class="form-label">
-                                        <input type="radio" name="radio15">
-                                        Fashion supplier
-                                    </label>
-                                </div>
-                            </td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-        {{-- End Suppliers inputs --}}
     </div>
 
 

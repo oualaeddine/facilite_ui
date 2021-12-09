@@ -284,6 +284,18 @@ CKEDITOR.replace('description-editor', {
     ]
 });
 
+// Switch between combinations and quantities
+$('.combinations-quantities input[type=radio][name=combinations_quantities]').change(function() {
+    if (this.value == 1) {
+        $('.quantities-tab').addClass('d-none');
+        $('.combinations-tab').removeClass('d-none');
+    }
+    else if (this.value == 0) {
+        $('.combinations-tab').addClass('d-none');
+        $('.quantities-tab').removeClass('d-none');
+    }
+});
+
 // Add new feature action
 $('#add-feature').click(function () {
     $('#feature-prototype .product-feature').clone().appendTo('#features');
@@ -305,3 +317,43 @@ $('#brand').on('click','.delete-brand',function(){
     $(this).closest('.brand-content').remove();
     $('#add-brand').removeClass('d-none');
 });
+
+
+// Start combinations   actions
+$('.combinations-sizes input').change(function () {
+    if(this.checked) {
+        let text = $(this).siblings('.input-label').text();
+        appendCombination('Size', text)
+    } else {
+        let id   = 'Size-' + $(this).siblings('.input-label').text();
+        $(`.combinations-preview #${id}`).remove()
+    }
+});
+
+$('.combinations-colors input').change(function () {
+    if(this.checked) {
+        let text = $(this).siblings('.input-label').text();
+        appendCombination('Color', text)
+    } else {
+        let id   = 'Color-' + $(this).siblings('.input-label').text();
+        $(`.combinations-preview #${id}`).remove()
+    }
+});
+
+$('.combinations-dim input').change(function () {
+    if(this.checked) {
+        let text = $(this).siblings('.input-label').text();
+        appendCombination('Dim', text)
+    } else {
+        let id   = 'Dim-' + $(this).siblings('.input-label').text();
+        $(`.combinations-preview #${id}`).remove()
+    }
+});
+
+function appendCombination(prefix, text) {
+    let itemText = `${prefix}: ${text}`;
+    let id       = `${prefix}-${text}`;
+    let item     = `<span id="${id}" class="combinations-item">${itemText}</span>`;
+    $('.combinations-preview').append(item)
+}
+// End combinations   actions
