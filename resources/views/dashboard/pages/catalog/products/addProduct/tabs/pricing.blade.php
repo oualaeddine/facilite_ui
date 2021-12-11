@@ -171,56 +171,5 @@
             </div>
         </div>
         {{-- End Specific prices inputs--}}
-
-        {{-- Start Priority management inputs--}}
-        <div class="mb-4">
-            <h5 class="fw-bold mt-1 mb-3">Priority management</h5>
-            <div class="row mb-3">
-                <label class="form-control-label mb-1">Priorities</label>
-                <div class="col-lg-3 col-md-6">
-                    <select class="form-select form-control bordered-select">
-                        <option value="id_shop">Shop</option>
-                        <option value="id_currency" selected="selected">Currency</option>
-                        <option value="id_country">Country</option>
-                        <option value="id_group">Group</option>
-                    </select>
-                </div>
-                <div class="col-lg-3">
-                    <select class="form-select form-control bordered-select">
-                        <option value="id_shop" selected="selected">Shop</option>
-                        <option value="id_currency">Currency</option>
-                        <option value="id_country">Country</option>
-                        <option value="id_group">Group</option>
-                    </select>
-                </div>
-                <div class="col-lg-3">
-                    <select class="form-select form-control bordered-select">
-                        <option value="id_shop">Shop</option>
-                        <option value="id_currency">Currency</option>
-                        <option value="id_country" selected="selected">Country</option>
-                        <option value="id_group">Group</option>
-                    </select>
-                </div>
-                <div class="col-lg-3">
-                    <select class="form-select form-control bordered-select">
-                        <option value="id_shop">Shop</option>
-                        <option value="id_currency">Currency</option>
-                        <option value="id_country">Country</option>
-                        <option value="id_group" selected="selected">Group</option>
-                    </select>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <div class="form-check mt-4 pt-1">
-                        <input class="form-check-input" type="checkbox" value="" >
-                        <label class="form-check-label" for="defaultCheck1">
-                            Apply to all products
-                        </label>
-                    </div>
-                </div>
-            </div>
-        </div>
-        {{-- End Priority management inputs--}}
     </div>
 </div>

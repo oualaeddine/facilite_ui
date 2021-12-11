@@ -6,10 +6,6 @@
             <h5 class="fw-bold mt-1 mb-3">Quantities</h5>
             <div class="row">
                 <div class="col-lg-4 col-md-6">
-                    <label class="form-control-label mb-1">Quantity</label>
-                    <input type="number" min="0" value="0" class="form-control">
-                </div>
-                <div class="col-lg-4 col-md-6">
                     <label class="form-control-label mb-1">Minimum quantity for sale</label>
                     <input type="number" min="0" value="1" class="form-control">
                 </div>
@@ -20,12 +16,6 @@
         {{-- Start Stock inputs--}}
         <div class="mb-5">
             <h5 class="fw-bold mt-1 mb-3">Stock</h5>
-            <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <label class="form-control-label mb-1">Stock location</label>
-                    <input type="text" class="form-control">
-                </div>
-            </div>
             <div class="row mt-3">
                 <div class="col-lg-4 col-md-6">
                     <label class="form-control-label mb-1">Low stock level</label>
